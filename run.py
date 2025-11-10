@@ -79,7 +79,7 @@ def setup_database(force_reindex: bool = False) -> str:
     return db_path
 
 
-def start_server(host: str = "127.0.0.1", port: int = 8000, reload: bool = False):
+def start_server(host: str = "127.0.0.1", port: int = 80, reload: bool = False):
     """Start the FastAPI server."""
     print(f"🌐 Starting server at http://{host}:{port}")
     print(f"📊 API Documentation: http://{host}:{port}/docs")
